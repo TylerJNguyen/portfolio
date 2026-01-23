@@ -10,76 +10,135 @@
   </head>
   <body>
     <main>
-        <img src="images/me.png" alt="me in front of the ocean"></img>
+      <img class="banner" src="images/seattle.jpg" alt="seattle skyline"></img>
+      <section class="content">
 
-        <!-- links -->
-        <a href="mailto:tyjnguyen@gmail.com">
-          Email
-        </a>
-        <a href="https://www.linkedin.com/in/tyler-nguyen-58618b354/">
-          LinkedIn
-        </a>
-        <a href="">
-          Resume
-        </a>
-        <h1>Tyler Nguyen</h1>  
-        <p>
-        Hi, I'm Tyler - I'm a student at the University of Washington and a
-        software developer with an interest in cybersecurity
-        </p>
+        <div id="header">
+          <img class="pfp" src="images/me.png" alt="me in front of the ocean">
+          </img>
 
-        <h2>About Me</h2>
-        <p>
-        I'm currently pursuing my degree, a Bachelor of Science in Informatics,
-        through the iSchool at the University of Washington. While my main focus
-        is in software development, my interest in online privacy and security
-        has also led me to explore academics in cybersecurity and risk
-        management through the Informatics major. In addition to helping me
-        navigate technology decisions in my day-to-day life, this has also
-        helped to inform my hobby homelab, where I self-host services for
-        personal use and gain hands on experience learning things like system
-        architecture and networking.
-        </p>
-        <p>
-        Outside of school, my interest in music and games has inspired me to
-        spend time programming for fun, working on tools such as metadata
-        taggers for my music collection and the occasional bit of game
-        development. This has allowed me to continue to build my skills in
-        contexts other than the primarily web-dev focused courses of the iSchool
-        and learn about things that are interesting to me like rust and vulkan.
-        </p>
+          <section id="links">
+            <a href="mailto:tyjnguyen@gmail.com">
+              <img src="images/mail.svg"></img>
+              Email
+            </a>
+            <a href="https://www.linkedin.com/in/tyler-nguyen-58618b354/">
+              <img src="images/linkedin.svg"></img>
+              LinkedIn
+            </a>
+            <a href="">
+              <img src="images/article_person.svg"></img>
+              Resume
+            </a>
+          </section>
+        </div>
+
+        <section id="intro">
+          <h1>Tyler Nguyen</h1>  
+          <p>
+          Hi, I'm Tyler - I'm a student at the University of Washington and a
+          software developer with an interest in cybersecurity
+          </p>
+        </section>
+
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+          I'm currently pursuing my degree, a Bachelor of Science in
+          Informatics, through the iSchool at the University of Washington.
+          While my main focus is in software development, my interest in online
+          privacy and security has also led me to explore academics in
+          cybersecurity and risk management through the Informatics major. In
+          addition to helping me navigate technology decisions in my day-to-day
+          life, this has also helped to inform my hobby homelab, where I
+          self-host services for personal use and gain hands on experience
+          learning things like system architecture and networking.
+          </p>
+        </section>
 
         <hr>
 
-        <h2>My Projects</h2>
-        <div class="card">
-          <!-- 442 campusfoodswap -->
-          <img src="images/cfs.png" alt="CampusFoodSwap homepage"
-          class="proj-img"></img>
-          <h3>CampusFoodSwap</h3>
+        <section id="projects">
+          <h2>My Projects</h2>
+          <p>Click on a project for more details</p>
+          <section class="proj-grid">
+            <div class="card" id="cfs">
+              <img src="images/cfs.png" alt="CampusFoodSwap homepage"
+              class="proj-img"></img>
+              <div class="proj-desc">
+                <h3>CampusFoodSwap</h3>
+                <p>
+                Empowering university students with accessible tools to build
+                sustainable food habits, reduce waste and conserve resources
+                through community.
+                </p>
+              </div>
+            </div>
+            <div class="card" id="sc">
+              <img src="images/sc.png" alt="Second Chance website homepage"
+              class="proj-img"></img>
+              <div class="proj-desc">
+                <h3>Second Chance</h3>
+                <p>
+                Creating a platform to empower sustainable style, reducing waste
+                and promoting re-use.
+                </p>
+              </div>
+            </div>
+            <div class="card" id="cca">
+              <img src="images/cca.png" alt="climate change analysis webpage"
+              class="proj-img"></img>
+              <div class="proj-desc">
+                <h3>Climate Change Analysis</h3>
+                <p>
+                Investigating the multifaceted effects of climate change on
+                various environmental ecosystems to provide insights and explore
+                effective mitigation and adaptation strategies
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <hr>
+
+        <section id="other">
+          <h2>Other</h2>
           <p>
-          Empowering university students with accessible tools to build
-          sustainable food habits, reduce waste and conserve resources through
-          community.
+          Outside of school, my interest in music and games has inspired me to
+          spend time programming for fun, working on tools such as metadata
+          taggers for my music collection or the occasional bit of game
+          development. This has allowed me to continue to build my skills in
+          contexts other than the primarily web-dev focused courses of the
+          iSchool and learn about things that are interesting to me like rust
+          and vulkan. I look forward to sharing these projects when they are
+          more complete.
           </p>
+        </section>
+      </section>
+
+      <!-- modal -->
+      <section class="modal" id="proj-modal">
+        <button id="modal-btn">
+          <img src="images/close.svg"></img>
+        </button>
+        <div class="modal-content">
+          <img alt="project image" id="proj-modal-img"> </img>
+          <h1 id="proj-name">Project Name</h1>
+          <h2>Goals</h2>
+          <p id="proj-goals">Project goals</p>
+          <h2>My Role</h2>
+          <p id="proj-role">Role</p>
+          <h2>Problem / Opprotunity</h2>
+          <p id="proj-prob">Problem statement</p>
+          <h2>Process and Solution</h2>
+          <p id="proj-sol">Solution</p>
+          <h2>Outcome</h2>
+          <p id="proj-outcome">Outcome</p>
+          <h2>Takeaways</h2>
+          <p id="proj-takeaway">Takeaways</p>
         </div>
-        <div class="card">
-          <!-- 201 climate change analysis -->
-          <img src="images/" alt=""></img>
-          <h3>Climate Change Analysis</h3>
-          <p>
-          Investigating the multifaceted effects of climate change on various
-          environmental ecosystems to provide insights and explore effective
-          mitigation and adaptation strategies
-          </p>
-        </div>
-        <div class="card">
-          <!--  -->
-          <img src="images/" alt=""></img>
-          <h3></h3>
-          <p>
-          </p>
-        </div>
+      </section>
     </main>
     <script src="index.js"></script>
   </body>
