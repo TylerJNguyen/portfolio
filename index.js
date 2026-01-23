@@ -82,13 +82,33 @@ const scData = {
     " datastore since I have primarily used RDBM systems before.",
 };
 const ccaData = {
-  name: "",
-  goals: "",
-  role: "",
-  problem: "",
-  solution: "",
-  outcome: "",
-  takeaways: "",
+  name: "Climate Change Analysis",
+  goals: "Primarily the purpose of this project was to analyze data to" +
+    " investigate the multifaceted effects of climate change on various" +
+    " environmental ecosystems and provide insights.",
+  role: "My part in the data analysis was to analyze the correlation between" +
+    " climate change indicators such as CO2 emissions and the cost of fossil" +
+    " fuels like gasoline and diesel in order to understand whether or not" +
+    " economical factors would significantly influence climate change.",
+  problem: "Climate change has become a global epidemic, with human activities" +
+    " strongly impacting the Earth’s biodiversity, ecosystems, and, atmosphere." +
+    " This causes concerns as these climate changes negatively influence other" +
+    " important natural resources such as our terrestrial, oceanic," +
+    " glaciological, and hydrological ecosystems.",
+  solution: "To help better understand what sort of things have significant" +
+    " impact on climate change, we examined possible correlations and looked" +
+    " to real world datasets, using R to create charts for visualization.",
+  outcome: "We were able to identify that China, Japan, the Netherlands, South" +
+    " Korea, Taiwan, United Kingdom, and USA were the top countries emitting CO2" +
+    " as well as identify the highest emissions per capita as being China." +
+    " This helped us to call into consideration global geographical policies" +
+    " which may significantly affect climate change. We were further able to" +
+    " extrapolate that economic factors and policy also have significant" +
+    " potential to impact the rate of climate change from our study on fossil" +
+    " fuel prices.",
+  takeaways: "Doing this analysis helped me to get into the basics of data" +
+    " anlysis and improve my proficiency with R. It also helped me get a" +
+    " better grasp of real world datasets.",
 };
 
 // modal
