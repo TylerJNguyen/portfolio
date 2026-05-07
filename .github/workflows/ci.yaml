@@ -1,0 +1,15 @@
+name: "CI"
+on:
+  push:
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.0.2
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31.10.6
+      - uses: cachix/cachix-action@v17
+        with:
+          name: tyjn
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+      - run: nix develop --command npm run type-check
