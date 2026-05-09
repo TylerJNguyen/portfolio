@@ -22,7 +22,7 @@ jobs:
           name: tyjn
           authToken: "${{secrets.CACHIX_AUTH_TOKEN}}"
       - name: Build with Nix
-         run: nix build
+        run: nix build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
